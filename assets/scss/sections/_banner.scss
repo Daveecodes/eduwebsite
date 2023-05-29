@@ -16,8 +16,6 @@
     .container{
         position: relative;
         z-index: 2;
-        
-
     }
     &_text{
         font-weight: 900;
@@ -39,6 +37,8 @@
         line-height: 150%;
         gap: 50px;
         margin-left: 30px;
+
+
         &::before{
             content: '';
             position: absolute;
@@ -50,7 +50,7 @@
             left: -21px;
             transform: translate(-30% -30%);
             z-index: -1;
-            transition: all 0.2s ease-out;
+
         }
         &:hover{
             &::after{
@@ -78,6 +78,8 @@
             position: relative;
             display: flex;
             gap: 25px;
+            color: $primary;
+
 
         }
         &_button{
@@ -86,10 +88,17 @@
            border: 2px solid $primary;
            border-radius: 4px;
            opacity: 1;
-        }
-        &_text{
            color: $primary;
+           transition: all 0.2s ease-in-out;
+           
+
+           &:hover{
+            background-color: $primary;
+            color: $white;
+           }
+           
         }
+        
     }
 }
 

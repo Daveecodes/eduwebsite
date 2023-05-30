@@ -1,0 +1,38 @@
+.certificate{
+    @include flex(center,center);
+
+    &_row{
+        @include flex(center, space-between);
+        gap: 50px;
+        
+        
+    }
+
+    &_content{
+
+
+       &_title{
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 200%;
+        color: #1E212C;
+       }
+
+
+
+        &_subtitle{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: #424551;
+            
+        }
+
+        &_logos{
+            @include flex()
+        }
+    
+    }
+
+    
+}

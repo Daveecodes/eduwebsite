@@ -1,6 +1,12 @@
 .banner{
     position: relative;
     padding-bottom: 70px;
+    
+    &_button_button{
+        @media screen and (max-width:980px) {
+            display: block;
+         }
+       }
 
     &::before{
         content: '';
@@ -19,8 +25,8 @@
     }
     &_text{
         font-weight: 900;
-        font-size: 54px;
         line-height: 180%;
+        @include adaptive-value('font-size',54,24)
     }
     &_row{
        @include flex(unset, space-between);
@@ -90,6 +96,12 @@
            opacity: 1;
            color: $primary;
            transition: all 0.2s ease-in-out;
+
+           &_button{
+            @media screen and (max-width:980px) {
+                display: block;
+             }
+           }
            
 
            &:hover{
@@ -98,6 +110,7 @@
            }
            
         }
+        
         
     }
 }

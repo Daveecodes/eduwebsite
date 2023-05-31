@@ -48,6 +48,16 @@ html, body {
   position: relative;
   padding-top: 20px;
 }
+.header_burger {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+@media screen and (max-width: 980px) {
+  .header_burger {
+    display: block;
+  }
+}
 .header_row {
   display: flex;
   align-items: center;
@@ -66,13 +76,45 @@ html, body {
 }
 .header_button {
   position: relative;
-  padding: 15px 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
   background: #FF3F3A;
   border-radius: 4px;
   border: 2px solid #FF3F3A;
   transition: all 0.2s ease-in-out;
   color: #fff;
   z-index: 2;
+}
+@media screen and (max-width: 1260px) {
+  .header_button {
+    padding-top: calc(
+           8px + 7 * ((100vw - 32px) / 940));
+  }
+}
+@media screen and (max-width: 1260px) {
+  .header_button {
+    padding-bottom: calc(
+           8px + 7 * ((100vw - 32px) / 940));
+  }
+}
+@media screen and (max-width: 1260px) {
+  .header_button {
+    padding-right: calc(
+           20px + 10 * ((100vw - 32px) / 940));
+  }
+}
+@media screen and (max-width: 1260px) {
+  .header_button {
+    padding-left: calc(
+           20px + 10 * ((100vw - 32px) / 940));
+  }
+}
+@media screen and (max-width: 980px) {
+  .header_button {
+    display: none;
+  }
 }
 .header_button:hover {
   background-color: transparent;
@@ -81,6 +123,19 @@ html, body {
 .header_button_text {
   font-weight: 700;
   font-size: 16px;
+  font-size: 16px;
+}
+@media screen and (max-width: 1260px) {
+  .header_button_text {
+    font-size: calc(
+           4px + 12 * ((100vw - 32px) / 940));
+  }
+}
+@media screen and (max-width: 1260px) {
+  .header_button_text {
+    font-size: calc(
+           4px + 12 * ((100vw - 32px) / 940));
+  }
 }
 .header_link {
   font-weight: 700;
@@ -102,8 +157,18 @@ html, body {
   padding: 0px;
   gap: 8px;
 }
+@media screen and (max-width: 980px) {
+  .header_button_register {
+    display: none;
+  }
+}
 .header_assets {
   gap: 60px;
+}
+@media screen and (max-width: 980px) {
+  .header_assets {
+    gap: 15px;
+  }
 }
 .header_navbar {
   display: flex;
@@ -111,16 +176,31 @@ html, body {
   justify-content: center;
   gap: 25px;
 }
+@media screen and (max-width: 980px) {
+  .header_navbar {
+    display: none;
+  }
+}
 .header_register {
   color: #424551;
   font-weight: 700;
   font-size: 16px;
   line-height: 160%;
 }
+@media screen and (max-width: 980px) {
+  .header_register {
+    display: none;
+  }
+}
 
 .banner {
   position: relative;
   padding-bottom: 70px;
+}
+@media screen and (max-width: 980px) {
+  .banner_button_button {
+    display: block;
+  }
 }
 .banner::before {
   content: "";
@@ -139,8 +219,14 @@ html, body {
 }
 .banner_text {
   font-weight: 900;
-  font-size: 54px;
   line-height: 180%;
+  font-size: 54px;
+}
+@media screen and (max-width: 1260px) {
+  .banner_text {
+    font-size: calc(
+           24px + 30 * ((100vw - 32px) / 940));
+  }
 }
 .banner_row {
   display: flex;
@@ -206,6 +292,11 @@ html, body {
   opacity: 1;
   color: #FF3F3A;
   transition: all 0.2s ease-in-out;
+}
+@media screen and (max-width: 980px) {
+  .banner_content_button_button {
+    display: block;
+  }
 }
 .banner_content_button:hover {
   background-color: #FF3F3A;
@@ -345,7 +436,8 @@ html, body {
   margin-bottom: 20px;
 }
 .block_info:hover {
-  box-shadow: 3px 2px 47px 20px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  border-radius: 4px;
 }
 
 .price_info {
@@ -378,6 +470,12 @@ html, body {
   align-items: center;
   justify-content: space-between;
   gap: 500px;
+}
+.course_types_row_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 700px;
 }
 
 .benefits {
@@ -690,19 +788,221 @@ html, body {
 }
 .certificate_row {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
-  gap: 50px;
+  gap: 100px;
+}
+.certificate_content {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 35px;
+}
+.certificate_content_logos {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 25px;
 }
 .certificate_content_title {
   font-weight: 900;
   font-size: 30px;
   line-height: 200%;
   color: #1E212C;
+  margin-bottom: 20px;
 }
 .certificate_content_subtitle {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
   color: #424551;
+}
+
+.course_types_second {
+  display: flex;
+}
+.course_types_second_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 700px;
+}
+.course_types_second_row_buttons {
+  display: flex;
+  gap: 10px;
+}
+.course_types_second_row_button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  fill: #FF3F3A;
+  border: none;
+}
+
+.members_info {
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+}
+.members_info_row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+@media screen and (max-width: 1200px) {
+  .members_info_row {
+    flex-direction: column;
+  }
+}
+.members_info_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 285px;
+  height: 320px;
+  background-color: #FFCF2D;
+  flex-wrap: wrap;
+  border-radius: 4px;
+}
+.members_info_panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.members_info_panel:hover {
+  transform: translateY(-10px);
+}
+.members_info_desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.members_info_name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #424551;
+}
+.members_info_job {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #787A80;
+}
+
+.students_opinion {
+  margin: 150px;
+}
+.students_opinion_section {
+  width: 40px;
+  height: 5px;
+  border-radius: 50px;
+  background-color: #B3B7BC;
+}
+.students_opinion_section:hover {
+  background-color: #424551;
+}
+.students_opinion_sections {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.students_opinion_content_row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: 4px;
+  padding: 100px;
+}
+.students_opinion_content_text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
+  color: #424551;
+}
+.students_opinion_content_desc {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.students_opinion_content_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.students_opinion_content_info_text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.students_opinion_content_info_title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: #1E212C;
+}
+.students_opinion_content_info_subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #787A80;
+}
+
+.register {
+  position: relative;
+  padding: 100px;
+  margin: 70px 0 0 0;
+}
+.register::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FF3F3A;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: -1;
+}
+.register_button {
+  padding-left: 20px;
+  width: 386px;
+  height: 52px;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #9A9CA5;
+  z-index: 5;
+}
+.register_title {
+  text-align: center;
+  z-index: -1;
+}
+.register_panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  z-index: 5;
 }/*# sourceMappingURL=main.css.map */

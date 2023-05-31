@@ -2,7 +2,15 @@
     @include flex (center,space-between);
 
     &_row{
-      @include flex(center,space-between );
+      @include flex(center,space-between);
       gap: 500px;
+
+
+      &_row{
+        @include flex(center,space-between);
+        gap: 700px;
+      }
     }
+
+  
 }

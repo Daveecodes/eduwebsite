@@ -1,0 +1,25 @@
+.course_types_second{
+  display: flex;
+
+    &_row{
+      @include flex(center,space-between);
+      gap: 700px;
+
+      &_buttons{
+        display: flex;
+        gap: 10px;
+
+      }
+
+      &_button{
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        fill: $primary;
+        border: none;
+      }
+    }
+
+  
+
+}

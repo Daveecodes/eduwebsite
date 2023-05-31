@@ -2,13 +2,24 @@
     @include flex(center,center);
 
     &_row{
-        @include flex(center, space-between);
-        gap: 50px;
+        @include flex(start, space-between);
+        gap: 100px;
         
         
     }
 
     &_content{
+        @include flex(start,start);
+        flex-direction: column;
+        gap: 35px;
+
+
+
+        &_logos{
+            @include flex(start,center);
+            gap: 25px;
+        }
+
 
 
        &_title{
@@ -16,6 +27,7 @@
         font-size: 30px;
         line-height: 200%;
         color: #1E212C;
+        margin-bottom:20px ;
        }
 
 
@@ -26,11 +38,10 @@
             line-height: 160%;
             color: #424551;
             
+            
         }
 
-        &_logos{
-            @include flex()
-        }
+        
     
     }
 

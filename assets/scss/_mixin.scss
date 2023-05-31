@@ -3,3 +3,20 @@
     align-items: $align;
     justify-content: $justify;
 } 
+
+@mixin media($width){
+    @media screen and (max-width: #{$width}px) {
+       @content        
+    }
+}
+
+$maxwidth:1920;
+$maxWidthContainer:1260;
+@mixin adaptive-value($property,$startSize,$minSize){
+    $addSize:$startSize - $minSize;
+    #{$property}:$startSize + px;
+    @include media($maxWidthContainer){
+        #{$property}: calc(
+           #{$minSize + px} + #{$addSize} * ((100vw - 32px) / #{$maxWidthContainer - 320}));
+    }
+}   

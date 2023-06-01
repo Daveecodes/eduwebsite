@@ -5,13 +5,14 @@
     flex-direction: column;
     font-family: $main-font;
     font-style: normal;
-    font-family: 14px;
+    font-size: 14px;
     font-weight: normal;
     line-height: 120%;
 
 }
 .main{
     flex: 1 1 auto;
+    flex-wrap: wrap;
 }
 .container{
     widows: 100%;

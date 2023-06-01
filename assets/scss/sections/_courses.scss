@@ -1,0 +1,11 @@
+.courses{
+
+    &_title{
+        margin-top: 100px;
+    }
+
+    &_choice{
+        @include flex(center, space-between);
+        margin-top: 40px;
+    }
+}

@@ -4,6 +4,14 @@
       @include flex(center, space-between);
       gap: 20px;
 
+      &_center{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+
+      }
+
       &_left{
         display: flex;
         flex-direction: column;
@@ -22,12 +30,22 @@
     }
    
 }
+.second_row{
+    @include flex(center,center);
+    margin-top: 50px;
+    
+}
 .block_info{
     @include flex(center, space-between);
     
     position: relative;
     box-shadow: 6px 6px 22px 0px rgba(34, 60, 80, 0.2);
     transition: all 0.4s ease-in-out;
+
+
+    &_second{
+        flex-direction: column;
+    }
 
     
     &_image{

@@ -33,6 +33,8 @@
         z-index: 5;
     }
 
+    
+
     &_title{
         text-align: center;
         z-index: -1;
@@ -51,4 +53,10 @@
     }
 
 
+}
+
+.placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
 }

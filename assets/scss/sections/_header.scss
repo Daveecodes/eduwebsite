@@ -45,6 +45,8 @@
             background-color: transparent;
             color: $primary;
         }
+       
+
   
         &_text{
             font-weight: 700;
@@ -62,6 +64,10 @@
         z-index: 2;
 
         &:hover{
+            color: $primary;
+        }
+        &:slotted{
+            background-color: transparent;
             color: $primary;
         }
     }

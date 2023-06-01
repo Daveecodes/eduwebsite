@@ -1,12 +1,12 @@
 .students_opinion{
     margin: 150px;
 
-
     &_section{
         width: 40px;
         height: 5px;
         border-radius: 50px;
         background-color: #B3B7BC;
+
 
            
         &:hover{
@@ -16,6 +16,7 @@
     &_sections{
         @include flex(center,center);
         gap: 20px;
+        margin-top: 70px;
     }
 
     &_content{

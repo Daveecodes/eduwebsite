@@ -1,6 +1,7 @@
 .members_info{
-    margin-bottom: 100px;
     flex-wrap: wrap;
+    background: #F4F5F7;
+    padding-bottom:150px ;
     
     &_row{
         @include flex(center,center);

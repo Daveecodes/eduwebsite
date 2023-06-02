@@ -1,11 +1,22 @@
 .certificate{
     @include flex(center,center);
+    
+    &_image{
+        
+        @include adaptive-value('width',825,125);
+        
+    }
 
     &_row{
         @include flex(start, space-between);
         gap: 100px;
+        @include adaptive-value('gap',100,20);
         
-        
+        @media screen and (max-width:1230px) {
+            flex-direction: column;
+            @include flex(center,center);
+            gap: 50px;
+        }
     }
 
     &_content{

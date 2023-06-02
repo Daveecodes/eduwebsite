@@ -1,5 +1,5 @@
 .students_opinion{
-    margin: 150px;
+    @include adaptive-value('margin',150,30);
 
     &_section{
         width: 40px;
@@ -28,14 +28,20 @@
             box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
             border-radius: 4px;
             padding: 100px;
+
+            @media screen and (max-width:835px) {
+                padding: 10px;
+
+            }
+
            
         }
 
         &_text{
             font-weight: 400;
-            font-size: 20px;
             line-height: 170%;
             color: #424551;
+            @include adaptive-value('font-size',20,8)
         }
 
         &_desc{

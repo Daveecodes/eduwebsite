@@ -1,15 +1,34 @@
 .course_types{
     @include flex (center,space-between);
+    margin-bottom: 25px;
+
+    &_second_row{
+      @media screen and (max-width:510px){
+        @include flex(center,center);
+
+        
+    }
+    }
 
     &_row{
       @include flex(center,space-between);
-      gap: 500px;
+      @include adaptive-value ('gap',400,50);
 
+      @media screen and (max-width:510px){
+        @include flex(center,center);
 
-      &_row{
-        @include flex(center,space-between);
-        gap: 700px;
+        
+    }
+
+      @media screen and (max-width:900px) {
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+        
       }
+
+
+     
     }
 
   

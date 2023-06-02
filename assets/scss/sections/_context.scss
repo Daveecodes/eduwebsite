@@ -1,28 +1,52 @@
 .context{
     position: relative;
+
+    &_image{
+        @include adaptive-value('width',705,105);
+
+    }
+
+    &_content{
+        @media screen and (max-width:1200px) {
+            @include flex(start,center);
+            flex-direction: column;
+        }
+    }
+
+ 
     
     &_row{
       @include flex(unset,space-between);
       gap: 100px;
       margin:200px 0 200px 0;
+
+       @media screen and (max-width:1200px) {
+          flex-direction: column;
+          @include flex(center,center);
+          gap: 50px;
+      }
+
     }
     &_small_title{
         font-weight: 700;
-        font-size: 16px;
         line-height: 150%;
         letter-spacing: 1px;
         text-transform: uppercase;
         color: #1E212C;
-        margin-bottom: 30px
+        margin-bottom: 30px;
+        @include adaptive-value('font-size',16,6);
+        
 
     }
     &_big_title{
         font-weight: 900;
-        font-size: 46px;
         line-height: 130%;
         color: #1E212C;
-        margin-bottom: 50px
+        margin-bottom: 50px;
+        @include adaptive-value('font-size',46,26);
     }
+
+
     &_subtitles{
         margin-bottom: 50px
 

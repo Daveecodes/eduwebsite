@@ -6,7 +6,15 @@
         @media screen and (max-width:980px) {
             display: block;
          }
-       }
+    }
+
+    &_image svg{
+        @include adaptive-value('width',602,150);
+
+        @media screen and (max-width:980px) {
+            @include flex(center,center);
+           }
+    }
 
     &::before{
         content: '';
@@ -31,6 +39,11 @@
     &_row{
        @include flex(unset, space-between);
        padding-top: 160px;
+
+       @media screen and (max-width:1260px) {
+        flex-direction: column;
+        gap: 50px;
+       }
     }
     &_button{
         position: relative;
@@ -79,12 +92,21 @@
         flex-direction: column;
         gap:140px;
 
+        @media screen and (max-width:980px) {
+            text-align: center;
+           }
+
        
         &_buttons{
             position: relative;
             display: flex;
             gap: 25px;
             color: $primary;
+
+
+            @media screen and (max-width:980px) {
+                @include flex(center,center);
+               }
 
 
         }
@@ -96,6 +118,10 @@
            opacity: 1;
            color: $primary;
            transition: all 0.2s ease-in-out;
+           @include adaptive-value('padding-top',15,8);
+           @include adaptive-value('padding-bottom',15,8);
+           @include adaptive-value('padding-left',33,13);
+           @include adaptive-value('padding-right',33,13);
 
            &_button{
             @media screen and (max-width:980px) {
@@ -120,6 +146,24 @@
         display: flex;
         flex-wrap: wrap;
         margin-top: 165px;
+
+        @media screen and (max-width:1260px) {
+            flex-direction: column;
+            &:not(:last-child){
+                padding-right: 66px;
+                margin-right: 66px;
+            }
+            &::before{
+                position: absolute;
+                content: '';
+                right: 0;
+                width:8px ;
+                height: 8px;
+                border-radius: 50%;
+                // background-color: $primary;
+            }
+           }
+
     }
     &_card{
         @include flex(center, unset);
@@ -139,18 +183,38 @@
             border-radius: 50%;
             background-color: $primary;
         }
+        
+        @media screen and (max-width:1260px) {
+            &{
+                padding-right: 66px;
+                margin-right: 66px;
+            }
+            &::before{
+                position: absolute;
+                content: '';
+                right: 0;
+                width:8px ;
+                height: 8px;
+                border-radius: 50%;
+                background-color: $primary;
+            }
+           }
     }
     &_number{
         font-weight: 900;
         font-size: 46px;
         line-height: 130%;
         color: #1E212C;
+        @include adaptive-value('font-size',46,12)
     }
     &_text{
         font-weight: 400;
         font-size: 16px;
         line-height: 160%;
         color: #1E212C;
+        @include adaptive-value('font-size',16,4)
     }
 
-}
+    }
+
+

@@ -46,6 +46,11 @@
        margin-top: 40px;
        z-index: 5;
 
+       @media screen and (max-width:600px) {
+        flex-direction: column;
+        gap: 15px;
+       }
+
 
 
        

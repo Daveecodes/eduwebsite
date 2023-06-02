@@ -20,7 +20,7 @@
     }
     &_buttons{
         @include flex(center, center);
-        gap:38px;
+        @include adaptive-value('gap',38,14);
     }
     &_button{
         position: relative;

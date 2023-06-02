@@ -1,8 +1,21 @@
 .course_info{
     margin-bottom: 180px;
+    flex-wrap: wrap;
     &_row{
       @include flex(center, space-between);
       gap: 20px;
+
+      @media screen and (max-width:510px){
+        @include flex(center,center);
+
+    }
+
+
+      @media screen and (max-width:1020px) {
+        flex-direction: column;
+        width: 100%;
+        
+      }
 
       &_center{
         display: flex;
@@ -36,15 +49,20 @@
     
 }
 .block_info{
-    @include flex(center, space-between);
-    
+    @include flex(center, unset);
     position: relative;
     box-shadow: 6px 6px 22px 0px rgba(34, 60, 80, 0.2);
     transition: all 0.4s ease-in-out;
 
+    @media screen and (max-width:510px){
+        flex-direction: column;
+        
+    }
+
 
     &_second{
         flex-direction: column;
+        width: 390px;
     }
 
     
@@ -65,6 +83,10 @@
             height: 23px;
             text-align: center;
             margin-bottom: 20px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: #FFFFFF;
 
             
         }

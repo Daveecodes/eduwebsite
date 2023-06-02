@@ -3,6 +3,10 @@
     padding: 100px;
     margin: 70px 0 50px 0;
 
+    @media screen and (max-width:930px){
+       padding: 40px;
+    }
+
     &::before{
         content: '';
         position: absolute;
@@ -32,6 +36,11 @@
             border-radius: 4px;
             transition: all 0.2s ease-in-out;
 
+            @media screen and (max-width:750px){
+                flex-direction: column;
+                gap: 15px;
+            }
+
             &:hover{
                 box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 63, 58, 0.1), 0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
                 border-radius: 4px;
@@ -41,6 +50,11 @@
         &_date{
             @include flex(center,center);
             gap: 10px;
+
+            @media screen and (max-width:750px){
+                align-items: flex-start;
+                
+            }
 
 
             &_day{
@@ -102,5 +116,18 @@
     &_explore{
         @include flex(center,center);
         gap: 30px;
+
+        @media screen and (max-width:590px) {
+            flex-direction: column;
+        }
+
+        &_title{
+            font-weight: 700;
+            line-height: 110%;
+            align-items: center;
+            color: #1E212C;
+            @include adaptive-value('font-size',28,10);
+            
+        }
     }
 }

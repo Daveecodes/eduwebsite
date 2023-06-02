@@ -225,9 +225,15 @@
 
         }
 
+        &_data{
+            @include adaptive-value('font-size',14,6);
+        }
+        
+
     }
     &_button{
         color: $white;
+        @include adaptive-value('font-size',14,6);
         
     }
 }

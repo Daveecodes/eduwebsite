@@ -50,8 +50,7 @@
   
         &_text{
             font-weight: 700;
-            @include adaptive-value('font-size',16,4);
-            @include adaptive-value('font-size',16,4);
+            @include adaptive-value('font-size',16,8);
         
         }
     }

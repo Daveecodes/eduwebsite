@@ -9,7 +9,8 @@
         @include flex(center,center);
 
     }
-    
+  
+
       @media screen and (max-width:1020px) {
         flex-direction: column;
         width: 100%;
@@ -19,6 +20,11 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+
+        @media screen and (max-width:400px){
+            @include flex(center,center);
+    
+        }
       }
 
       &_left{
@@ -26,13 +32,21 @@
         flex-direction: column;
         gap: 30px;
          
-
+        @media screen and (max-width:400px){
+            @include flex(center,center);
+    
+        }
        
       }
       &_right{
         display: flex;
         flex-direction: column;
         gap: 30px;
+
+        @media screen and (max-width:400px){
+            @include flex(center,center);
+    
+        }
       }
       
       
@@ -64,12 +78,15 @@
     
     &_image{
         height: 214px;
+
+       
     }
     &_content{
         border-radius: 4px;
         padding: 32px 32px 62px 32px;
         height: 214px;
         width: auto;
+
        
         &_type{
             background-color: $succes;

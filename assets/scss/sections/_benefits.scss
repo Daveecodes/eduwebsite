@@ -7,14 +7,18 @@
     &_title{
         @include flex(center,center);
         flex-direction: column;
+        @include adaptive-value('font-size',16,6);
+
+        @media screen and (max-width:465px) {
+            text-align: center;
+        }
+
 
     }
     &_info{
         @include flex(center,space-between);
         margin-bottom: 70px;
-        flex-wrap: wrap;
 
-        @include adaptive-value('margin-bottom',70,5);
 
         @media screen and (max-width:870px) {
             flex-direction: column;
@@ -52,16 +56,24 @@
        @include flex(center,space-between);
        @media screen and (max-width:970px) {
         flex-direction: column;
+       }
 
         
-      &_image{
-        @include adaptive-value('width',600,150);
+        &_image {
+            
+            & svg {
+                @include adaptive-value('width',600,120);
+            }
+    
+       
+        }
+       
 
         @media screen and (max-width:980px) {
             @include flex(center,center);
            }
-    }
-    }
+    
+    
 
 
       &_text{
@@ -84,5 +96,5 @@
     
     }
        
-    }
+   }
 }

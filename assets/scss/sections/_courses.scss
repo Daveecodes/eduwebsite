@@ -5,7 +5,23 @@
     }
 
     &_choice{
-        @include flex(center, space-between);
+        @include flex(center, center);
         margin-top: 40px;
+        gap: 15px;
+
+        @media screen and (max-width:1140px) {
+            flex-direction: column;
+        }
+
+        &_left{
+        @include flex(center, space-between);
+        gap: 15px;
+          
+        }
+        &_right{
+            @include flex(center, space-between);
+            gap: 15px;
+    
+        }
     }
 }

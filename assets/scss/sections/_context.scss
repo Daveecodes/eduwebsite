@@ -3,6 +3,12 @@
 
     &_image{
         @include adaptive-value('width',705,105);
+        
+
+        & img{
+            width: 100%;
+            height: 100%;
+        }
 
     }
 

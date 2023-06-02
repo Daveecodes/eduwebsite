@@ -1183,13 +1183,13 @@ html, body {
   align-items: center;
   justify-content: center;
 }
-.certificate_image {
+.certificate_image img {
   width: 100%;
   height: 100%;
   width: 825px;
 }
 @media screen and (max-width: 1260px) {
-  .certificate_image {
+  .certificate_image img {
     width: calc(
            125px + 700 * ((100vw - 32px) / 940));
   }

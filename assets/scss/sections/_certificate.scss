@@ -1,7 +1,7 @@
 .certificate{
     @include flex(center,center);
     
-    &_image{
+    &_image img{
         width: 100%;
         height: 100%;
         @include adaptive-value('width',825,125);

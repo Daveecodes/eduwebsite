@@ -61,9 +61,9 @@
         @include flex(center,unset);
         gap: 20px;
         font-weight: 400;
-        font-size: 16px;
         line-height: 140%;
         color: #42444d;     
         width: 90%;
+        @include adaptive-value('font-size',16,5)
     }
 }

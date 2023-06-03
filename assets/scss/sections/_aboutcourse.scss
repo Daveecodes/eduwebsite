@@ -30,7 +30,7 @@
         line-height: 160%;
         color: #424551;
         margin-bottom: 60px;
-        @include adaptive-value('font-size',16,8);
+        @include adaptive-value('font-size',16,5);
 
     }
 
@@ -42,10 +42,10 @@
 
     &_learn{
         font-weight: 700;
-        font-size: 28px;
         line-height: 150%;
         color: #1E212C;
         margin-bottom: 40px;
+        @include adaptive-value('font-size',28,8);
     }
 
     &_join{
@@ -71,23 +71,25 @@
             letter-spacing: 1px;
             text-transform: uppercase;
             color: #1E212C;
-            @include adaptive-value('font-size',14,7);
+            @include adaptive-value('font-size',14,5);
         }
         &_date{
             font-weight: 700;
-            font-size: 24px;
             line-height: 130%;
             color: $primary;
             @include adaptive-value('font-size',24,12);
 
+            &_black{
+                color: #000;
+            }
+
         }
         &_subtitle{
             font-weight: 400;
-            font-size: 16px;
             line-height: 160%;
-            color: #787A80;
-            @include adaptive-value('font-size',16,8);
-            
+            color: #000;
+            opacity: 0.6;
+            @include adaptive-value('font-size',16,5);
         }
 
        

@@ -28,12 +28,15 @@
                 margin-bottom: 20px;
     
             }
+
+            &_icon:hover path{
+                fill: $primary;
+            }
                
            &_icons{
             display: flex;
             margin-top: 20px;
             gap: 20px;
-            opacity: 60%;
             margin-bottom: 15px;
 
             & path{
@@ -44,6 +47,10 @@
             .twitter:hover path{
               fill:$white;
               opacity: 30%;
+
+              &_second path{
+                fill:$primary;
+              }
              
             }
             .facebook:hover path{
@@ -65,6 +72,9 @@
             .telegram:hover path{
                 fill:$white;
                 opacity: 30%;
+            }
+            .behance:hover path{
+                fill:$primary;
             }
         
            }

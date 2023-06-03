@@ -19,7 +19,6 @@
         flex-direction: column;
 
         &_image{
-            position: relative;
 
             & img{
                 width: 100%;
@@ -99,6 +98,10 @@
         @include flex(start,start);
         gap: 20px;
         margin-top: 10px;
+
+        @media screen and (max-width:350px) {
+            gap: 7px;
+        }
 
         }
     }

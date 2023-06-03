@@ -825,7 +825,7 @@ html, body {
 @media screen and (max-width: 1260px) {
   .benefits_desc_row_text_subtitle {
     font-size: calc(
-           6px + 10 * ((100vw - 32px) / 940));
+           10px + 6 * ((100vw - 32px) / 940));
   }
 }
 

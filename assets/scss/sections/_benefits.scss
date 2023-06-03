@@ -88,7 +88,7 @@
             font-weight: 400;
             line-height: 160%;
             color: #424551;
-            @include adaptive-value('font-size',16,6);
+            @include adaptive-value('font-size',16,10);
 
             
         }

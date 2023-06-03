@@ -1255,6 +1255,11 @@ html, body {
   gap: 35px;
   margin-left: 10px;
 }
+@media screen and (max-width: 430px) {
+  .certificate_content_text {
+    gap: 10px;
+  }
+}
 @media screen and (max-width: 390px) {
   .certificate_content {
     gap: 10px;

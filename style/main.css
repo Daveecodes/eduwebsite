@@ -1571,6 +1571,9 @@ html, body {
   justify-content: center;
   flex-direction: column;
 }
+.posts_panel_image {
+  position: relative;
+}
 .posts_panel_image img {
   width: 100%;
   height: 100%;

@@ -173,6 +173,8 @@
         &:not(:last-child){
             padding-right: 66px;
             margin-right: 66px;
+
+           
         }
         &:not(:last-child):before{
             position: absolute;

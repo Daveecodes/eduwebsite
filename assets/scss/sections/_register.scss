@@ -3,6 +3,11 @@
     padding: 100px;
     margin: 70px 0 0 0;
 
+    @media screen and (max-width:520px) {
+        padding: 50px 10px;
+
+    }
+
     &::before{
         content: '';
         position: absolute;
@@ -31,6 +36,10 @@
         line-height: 160%;
         color: #9A9CA5;
         z-index: 5;
+
+        @media screen and (max-width:410px) {
+            width: 250px;
+        }
     }
 
     

@@ -518,7 +518,7 @@ html, body {
 @media screen and (max-width: 1260px) {
   .context_big_title {
     font-size: calc(
-           26px + 20 * ((100vw - 32px) / 940));
+           12px + 34 * ((100vw - 32px) / 940));
   }
 }
 .context_subtitles {
@@ -995,6 +995,7 @@ html, body {
     justify-content: center;
     gap: 20px;
     margin-bottom: 20px;
+    margin-left: 0;
   }
 }
 .footer_content_register_panel {
@@ -1012,7 +1013,7 @@ html, body {
     margin: 10px 0;
   }
 }
-.footer_content_register_panel:active {
+.footer_content_register_panel:focus {
   border: none;
 }
 .footer_desc {
@@ -1240,11 +1241,22 @@ html, body {
   gap: 35px;
   margin-left: 10px;
 }
+@media screen and (max-width: 390px) {
+  .certificate_content {
+    gap: 10px;
+  }
+}
 .certificate_content_logos {
   display: flex;
   align-items: start;
   justify-content: center;
   gap: 25px;
+}
+@media screen and (max-width: 390px) {
+  .certificate_content_logos {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 .certificate_content_title {
   font-weight: 900;
@@ -1454,6 +1466,11 @@ html, body {
   padding: 100px;
   margin: 70px 0 0 0;
 }
+@media screen and (max-width: 520px) {
+  .register {
+    padding: 50px 10px;
+  }
+}
 .register::before {
   content: "";
   position: absolute;
@@ -1480,6 +1497,11 @@ html, body {
   line-height: 160%;
   color: #9A9CA5;
   z-index: 5;
+}
+@media screen and (max-width: 410px) {
+  .register_button {
+    width: 250px;
+  }
 }
 .register_title {
   text-align: center;
@@ -1531,6 +1553,10 @@ html, body {
 }
 .posts_panel_image {
   position: relative;
+}
+.posts_panel_image img {
+  width: 100%;
+  height: 100%;
 }
 .posts_panel_image_post_type {
   position: absolute;

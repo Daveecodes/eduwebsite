@@ -26,12 +26,27 @@
         gap: 35px;
         margin-left: 10px;
 
+        
+        @media screen and (max-width:390px){
+            gap: 10px;
+        }
+
+
 
 
         &_logos{
             @include flex(start,center);
             gap: 25px;
+
+            @media screen and (max-width:390px){
+                flex-direction: column;
+                gap: 10px;
+            }
+
+        
         }
+
+      
 
 
 

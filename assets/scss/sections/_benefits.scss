@@ -80,7 +80,7 @@
 
         &_title{
            text-transform: none;
-           @include adaptive-value('font-size',16,6);
+           @include adaptive-value('font-size',16,10);
 
         }
         &_subtitle{

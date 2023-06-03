@@ -39,11 +39,10 @@
             gap: 25px;
 
             @media screen and (max-width:390px){
+                @include flex(center,center);
                 flex-direction: column;
                 gap: 10px;
             }
-
-        
         }
 
       
@@ -52,7 +51,6 @@
 
        &_title{
            font-weight: 900;
-           font-size: 30px;
            line-height: 200%;
            color: #1E212C;
            margin-bottom:20px ;
@@ -63,10 +61,9 @@
 
         &_subtitle{
             font-weight: 400;
-            font-size: 16px;
             line-height: 160%;
             color: #424551;
-            @include adaptive-value('font-size',16,8);
+            @include adaptive-value('font-size',16,10);
             
             
         }

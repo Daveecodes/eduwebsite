@@ -64,6 +64,6 @@
         line-height: 140%;
         color: #42444d;     
         width: 90%;
-        @include adaptive-value('font-size',16,5)
+        @include adaptive-value('font-size',16,10)
     }
 }
